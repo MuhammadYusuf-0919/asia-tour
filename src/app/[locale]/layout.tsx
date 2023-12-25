@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import '@/styles/globals.css'
 import { ReactNode } from "react";
@@ -13,7 +14,7 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
       <body>
         <Header />
         {children}
-        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
