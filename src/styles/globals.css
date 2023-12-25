@@ -8,3 +8,8 @@
 h1{
     @apply text-[55px] text-[white]
 }
+h2{
+    @apply text-[48px] text-[#000]
+}
+
+
