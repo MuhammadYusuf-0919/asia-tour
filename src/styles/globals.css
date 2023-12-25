@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.container{
+  @apply px-[35px] !w-full max-w-full md:px-[16px]
+}
+h1{
+  @apply text-[55px] text-[white]
+}
+
