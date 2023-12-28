@@ -1,0 +1,214 @@
+export const data=[
+    {
+        location:"Krgyztan-Uzbekistan",
+        img:'https://picsum.photos/100/80',
+        info:[
+            {
+                city:'Bishkek',
+                nights:2,
+                hotel:'Grand Hotel'
+            },
+            {
+                city:'Cholpon ota',
+                nights:5,
+                hotel:'Simiram'
+            },
+            {
+                city:'Karakol',
+                nights:7,
+                hotel:'MyHotel'
+            },
+            {
+                city:'Kochkor',
+                nights:4,
+                hotel:'Guest house'
+            },
+            {
+                city:'Tashkent',
+                nights:3,
+                hotel:'Regal Stay'
+            },
+            {
+                city:'Samarkand',
+                nights:1,
+                hotel:'Konstantin'
+            },
+            {
+                city:'Khiva',
+                nights:6,
+                hotel:'SahidZarafshon'
+            },
+        ],
+        galery:[
+            'https://picsum.photos/254/150',
+            'https://picsum.photos/250/154',
+            'https://picsum.photos/256/150',
+            'https://picsum.photos/250/156',
+            'https://picsum.photos/255/150',
+            'https://picsum.photos/250/155',
+        ],
+        loc:{
+            long:39.6548,
+            lat:66.9597
+        }
+    },
+    {
+        location:"Capital of central Asia with places",
+        img:'https://picsum.photos/101/80',
+        info:[
+            {
+                city:'Tashkent',
+                nights:3,
+                hotel:'Regal Stay'
+            },
+            {
+                city:'Bishkek',
+                nights:2,
+                hotel:'Grand Hotel'
+            },
+            {
+                city:'Kochkor',
+                nights:4,
+                hotel:'Guest house'
+            },
+            {
+                city:'Samarkand',
+                nights:1,
+                hotel:'Konstantin'
+            },
+            {
+                city:'Khiva',
+                nights:6,
+                hotel:'SahidZarafshon'
+            },
+            {
+                city:'Cholpon ota',
+                nights:5,
+                hotel:'Simiram'
+            },
+            {
+                city:'Karakol',
+                nights:7,
+                hotel:'MyHotel'
+            },
+        ],
+        galery:[
+            'https://picsum.photos/251/150',
+            'https://picsum.photos/250/151',
+            'https://picsum.photos/252/150',
+            'https://picsum.photos/250/152',
+            'https://picsum.photos/253/150',
+            'https://picsum.photos/250/153',
+        ],
+        loc:{
+            long:37.6548,
+            lat:66.9597
+        }
+    },
+    {
+        location:"The great silk Road",
+        img:'https://picsum.photos/102/80',
+        info:[
+            {
+                city:'Tashkent',
+                nights:3,
+                hotel:'Regal Stay'
+            },
+            {
+                city:'Bishkek',
+                nights:2,
+                hotel:'Grand Hotel'
+            },
+            {
+                city:'Kochkor',
+                nights:4,
+                hotel:'Guest house'
+            },
+            {
+                city:'Samarkand',
+                nights:1,
+                hotel:'Konstantin'
+            },
+            {
+                city:'Khiva',
+                nights:6,
+                hotel:'SahidZarafshon'
+            },
+            {
+                city:'Cholpon ota',
+                nights:5,
+                hotel:'Simiram'
+            },
+            {
+                city:'Karakol',
+                nights:7,
+                hotel:'MyHotel'
+            },
+        ],
+        galery:[
+            'https://picsum.photos/257/150',
+            'https://picsum.photos/250/157',
+            'https://picsum.photos/258/150',
+            'https://picsum.photos/250/158',
+            'https://picsum.photos/259/150',
+            'https://picsum.photos/250/159',
+        ],
+        loc:{
+            long:35.2343,
+            lat:66.9597
+        }
+    },
+    {
+        location:"Popular place of Krgzstan",
+        img:'https://picsum.photos/103/80',
+        info:[
+            {
+                city:'Tashkent',
+                nights:3,
+                hotel:'Regal Stay'
+            },
+            {
+                city:'Bishkek',
+                nights:2,
+                hotel:'Grand Hotel'
+            },
+            {
+                city:'Kochkor',
+                nights:4,
+                hotel:'Guest house'
+            },
+            {
+                city:'Samarkand',
+                nights:1,
+                hotel:'Konstantin'
+            },
+            {
+                city:'Khiva',
+                nights:6,
+                hotel:'SahidZarafshon'
+            },
+            {
+                city:'Cholpon ota',
+                nights:5,
+                hotel:'Simiram'
+            },
+            {
+                city:'Karakol',
+                nights:7,
+                hotel:'MyHotel'
+            },
+        ],
+        galery:[
+            'https://picsum.photos/260/150',
+            'https://picsum.photos/261/157',
+            'https://picsum.photos/262/150',
+            'https://picsum.photos/263/158',
+            'https://picsum.photos/264/150',
+            'https://picsum.photos/265/159',
+        ],
+        loc:{
+            long:39.2435,
+            lat:66.9597
+        }
+    },
+]

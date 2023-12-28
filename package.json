@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
     "@nextui-org/react": "^2.2.9",
+    "@pbe/react-yandex-maps": "^1.2.5",
     "animate.css": "^4.1.1",
     "framer-motion": "^10.16.16",
     "i18next": "^23.7.11",
     "next": "14.0.4",
     "next-intl": "^3.4.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-awesome-reveal": "^4.2.7",
+    "react-dom": "^18",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
