@@ -1,5 +1,6 @@
 
 import "@/styles/globals.css"
+
 import { ReactNode } from "react"
 import { NextIntlClientProvider, useMessages } from "next-intl"
 

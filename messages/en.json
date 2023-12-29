@@ -15,7 +15,10 @@
     "Top selling": "Top selling",
     "Best Tours": "Best Tours",
     "Best Abroad Tours": "Best Abroad Tours",
-    "Best Opinions": "Best Opinions"
+    "Best Opinions": "Best Opinions",
+    "Your full name": "Your full name",
+    "Your email": "Your email",
+    "Your phone number": "Your phone number"
   },
   "second": {
     "Best Results": "Best Results",
@@ -32,9 +35,6 @@
     "Touristic": "Touristic",
     "Traveling": "Traveling",
     "Book this Tour": "Book this Tour",
-    "Your full name": "Your full name",
-    "Your email": "Your email",
-    "Your phone number": "Your phone number",
     "Ticket type": "Ticket type",
     "Ticket a select": "Ticket a select",
     "Adult": "Adult",

@@ -47,7 +47,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="container-lg gap-x-[100px] smd:gap-y-[80px] sm:gap-y-[60px] py-[40px] md:py-[30px] sm:py-[20px] grid gap-y-[55px] smd:gap-y-[40px] sm:gap-y-[30px]"
+      className="container-lg gap-x-[100px]  py-[40px] md:py-[30px] sm:py-[20px] grid gap-y-[55px] smd:gap-y-[40px] sm:gap-y-[30px]"
     >
       <h3 className="dark-title">{t("Contact us")}</h3>
       <div className="grid grid-cols-2 md:grid-cols-1 justify-between gap-x-[90px] md:gap-y-[60px] md:justify-center">

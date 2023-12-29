@@ -16,7 +16,10 @@
     "Top selling": "Лучшие продажи",
     "Best Tours": "Лучшие туры",
     "Best Abroad Tours": "Лучшие зарубежные туры",
-    "Best Opinions": "Лучшие Мнения"
+    "Best Opinions": "Лучшие Мнения",
+    "Your full name": "Ваше полное имя",
+    "Your email": "Ваш адрес электронной почты",
+    "Your phone number": "Ваш номер телефона"
   },
   "second": {
     "Best Results": "Лучшие результаты",
@@ -33,9 +36,6 @@
     "Touristic": "Туристический",
     "Traveling": "Путешествие",
     "Book this Tour": "Забронировать этот тур",
-    "Your full name": "Ваше полное имя",
-    "Your email": "Ваш адрес электронной почты",
-    "Your phone number": "Ваш номер телефона",
     "Ticket a select": "Билет на выбор",
     "Adult": "Взрослый",
     "Child": "Ребенок",

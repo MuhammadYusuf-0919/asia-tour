@@ -16,7 +16,8 @@
     "Your message": "Mesajınız",
     "Enter your message": "Mesajınızı girin",
     "Your full name": "Tam adınız",
-    "Your phone number": "Telefon numaranız"
+    "Your phone number": "Telefon numaranız",
+    "Your email": "E-postanız"
   },
   "second": {
     "Best Results": "En İyi Sonuçlar",
@@ -33,9 +34,6 @@
     "Touristic": "Turistik",
     "Traveling": "Seyahat",
     "Book this Tour": "Bu Turun Rezervasyonunu Yapın",
-    "Your full name": "Tam adınız",
-    "Your email": "E-postanız",
-    "Your phone number": "Telefon numaranız",
     "Ticket a select": "Bir seçime bilet ver",
     "Adult": "Yetişkin",
     "Child": "Çocuk",
