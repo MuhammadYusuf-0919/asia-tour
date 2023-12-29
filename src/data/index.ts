@@ -23,7 +23,7 @@ interface FakeData {
 export const contactData: ContactDataItem[] = [
   {
     title: "Let’s talk",
-    descData: ["alpertungotour@gmail.com", "+998 99 999 99 99"],
+    descData: ["mailto: alpertungotour@gmail.com", "tel: +998 99 999 99 99"],
   },
   {
     title: "Location",

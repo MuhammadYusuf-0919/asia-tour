@@ -19,7 +19,7 @@ const TourTabs = () => {
     // px-[123px] 2xl:px-[32px] sm:px-[16px]
     return (
         <Slide triggerOnce direction='up'>
-            <div className='container-lg py-[80px] md:py-[60px] sm:py-[40px] flex flex-col gap-[36px] xl:gap-[20px]'>
+            <div className='flex flex-col gap-[36px] xl:gap-[20px]'>
                 <h2 className='md:text-center'>{tab?.location}</h2>
                 <div className='flex lg:flex-col-reverse lg:items-center gap-[60px] xl:gap-[40px]'>
                     <div className='smd:w-full'>

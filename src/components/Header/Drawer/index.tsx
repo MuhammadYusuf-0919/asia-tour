@@ -30,7 +30,7 @@ const Drawer = ({ open, setOpen, pathname, locale }: thisProps) => {
 
     return ReactDOM.createPortal(
         <div>
-            <div className={`fixed w-screen bottom-0 h-screen duration-0 drawer 
+            <div className={`fixed z-[0] w-screen bottom-0 h-screen duration-0 drawer 
              ${open ? 'backdrop-blur-lg opacity-100 z-[1000] ' : 'opacity-0'}`}
                 onClick={() => setOpen(false)} />
             <div className={`fixed shadow-card w-[300px] p-[16px] max-w-full

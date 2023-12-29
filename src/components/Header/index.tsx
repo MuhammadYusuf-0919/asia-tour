@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header className='animate__animated animate__zoomInDown'>
             <HeaderContact />
-            <div className='flex justify-between items-center container'>
+            <div className='flex justify-between items-center px-[35px] md:px-[16px]'>
                 <Image src={logo.src} alt='logo' width={125} height={125} className={`cursor-pointer lg:w-[100px] smd:w-[80px]`} />
                 <aside className='flex items-center gap-[34px] lg:gap-[25px] smd:gap-[16px]'>
                     <Dropdown isOpen={open} onOpenChange={(e) => setOpen(e)} className='dropdown min-w-[100px]' >

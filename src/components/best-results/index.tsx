@@ -55,7 +55,7 @@ const BestResults: React.FC = () => {
 
   return (
     <Slide triggerOnce direction="up">
-      <div className="container-lg grid py-[80px] md:py-[60px] sm:py-[40px] gap-y-[40px] md:gap-y-[30px] sm:gap-y-[20px]">
+      <div className="grid gap-y-[40px] md:gap-y-[30px] sm:gap-y-[20px]">
         <Slide direction="up" triggerOnce>
           <div className="flex flex-col items-start gap-4">
             <span>{t("With Easilly")}</span>
@@ -64,7 +64,7 @@ const BestResults: React.FC = () => {
         </Slide>
         <div className="grid grid-cols-2 md:grid-cols-1 justify-between gap-x-[80px] md:gap-x-[60px] md:gap-y-[50px]">
           <div className="grid gap-y-[80px] md:gap-y-[60px] sm:gap-y-[40px]">
-            <Slide direction="left" triggerOnce>
+            <Slide direction="left" triggerOnce className="px-[30px] md:px-[20px]">
               <ArrowImage url={bestResultsImage.src} />
             </Slide>
             <Slide direction="up" triggerOnce>
@@ -154,7 +154,7 @@ const BestResults: React.FC = () => {
                     ))}
                   </Select>
 
-                  <div className="flex items-center justify-between gap-[100px]">
+                  <div className="flex items-center justify-between gap-[100px] md:gap-[30px]">
                     <Select
                       variant="bordered"
                       label={t("Adult")}

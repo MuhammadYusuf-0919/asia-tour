@@ -64,7 +64,7 @@ const BestOpinions = ({ title, span }: any) => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className="flex justify-end container gap-[15px]">
+                    <div className="flex justify-center container gap-[15px]">
                         <Image src={arrow.src} alt="star" width={55} height={55} className="cursor-pointer md:w-[40px]"
                             onClick={slidePrev} />
                         <Image src={arrow.src} alt="star" width={55} height={55} className="cursor-pointer rotate-180 md:w-[40px]" onClick={slideNext} />

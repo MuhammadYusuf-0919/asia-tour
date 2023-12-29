@@ -13,7 +13,7 @@
 
 
 .container {
-  @apply px-[35px] !w-full max-w-full md:px-[16px]
+  @apply px-[50px] !w-full max-w-full xl:px-[30px] md:px-[16px]
 
 }
 
@@ -68,10 +68,6 @@ li span{
   @apply !m-0
 }
 
-.drawer{
-  --transition-speed:0.4s !important;
-  transition: ease 0.3s all !important;
-}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -87,4 +83,8 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background-color: #35CC61 !important;
   border-radius: 5px;
+}
+
+.contact label{
+  @apply !text-[30px] md:!text-[24px] smd:!text-[18px] !pb-[8px]
 }

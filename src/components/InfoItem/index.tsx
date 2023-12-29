@@ -12,10 +12,10 @@ export const InfoItem: React.FC<InfoItemProps> = ({ title, descData }) => {
   const createLink = (data: string) => {
     if (data.includes("tel:")) {
       const phoneNumber = data.replace("tel:", "");
-      return <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>;
+      return <a href={`tel: ${phoneNumber}`}>{phoneNumber}</a>;
     } else if (data.includes("mailto:")) {
       const email = data.replace("mailto:", "");
-      return <a href={`mailto:${email}`}>{email}</a>;
+      return <a href={`mailto: ${email}`}>{email}</a>;
     } else if (data.startsWith("http")) {
       return <a href={data} target="_blank" rel="noopener noreferrer">{data}</a>;
     } else {
