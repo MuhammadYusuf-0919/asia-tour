@@ -16,14 +16,12 @@
     "Your message": "Mesajınız",
     "Enter your message": "Mesajınızı girin",
     "Your full name": "Tam adınız",
-    "Your phone number": "Telefon numaranız"
-  },
-  "second": {
+    "Your phone number": "Telefon numaranız",
     "Best Results": "En İyi Sonuçlar",
     "All Tags": "Tüm Etiketler",
     "Flying": "Uçan",
     "Holiday": "Tatil",
-    "Family": "Aile",
+    "Family Tour": "Aile Turu",
     "Features": "özellikler",
     "Explore": "Keşfet",
     "Destinations": "Varış Noktaları",
@@ -33,22 +31,19 @@
     "Touristic": "Turistik",
     "Traveling": "Seyahat",
     "Book this Tour": "Bu Turun Rezervasyonunu Yapın",
-    "Your full name": "Tam adınız",
     "Your email": "E-postanız",
-    "Your phone number": "Telefon numaranız",
     "Ticket a select": "Bir seçime bilet ver",
     "Adult": "Yetişkin",
     "Child": "Çocuk",
     "date": "aa/gg/yy",
-    "Your message": "Mesajınız",
     "Book Now": "Şimdi Rezervasyon Yap",
-    "Enter your message": "Mesajınızı girin",
     "Include": "Dahil et",
-    "Not Include": "Dahil Değil"
+    "Not Include": "Dahil Değil",
     "Top selling": "En Çok Satanlar",
     "Best Tours": "En İyi Turlar",
     "Best Abroad Tours": "En İyi Yurtdışı Turlar",
-    "Best Opinions": "En İyi Görüşler"
+    "Best Opinions": "En İyi Görüşler",
+    "With Easilly": "Kolayca"
   },
   "footer": {
     "Follow us on": "Bizi Takip Edin",
