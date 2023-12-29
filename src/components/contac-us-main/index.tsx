@@ -33,6 +33,8 @@ function ContactUs() {
     >
       <div className="w-[80%] sm:w-[90%] mx-auto gap-[30px] smd:gap-[20px]">
         <h2 className="text-[white] text-[52px] md:text-4xl sm:text-2xl font-roboto font-bold text-center animate__animated animate__zoomInDown animate__slow">
+      <div className="w-[80%] mx-auto gap-[30px] smd:gap-[20px]">
+        <h2 className="text-[white]  md:text-[40px] text-[30px] font-roboto font-bold text-center animate__animated animate__zoomInDown animate__slow">
           {t("Contact-us-title")}
         </h2>
         <p className="text-[white] font-roboto font-normal text-4xl md:text-3xl smd:text-2xl sm:text-xl animate__animated animate__zoomInDown animate__slow">
@@ -51,5 +53,4 @@ function ContactUs() {
   )
 }
 
-// Export the BestOpinions component
 export default ContactUs

@@ -1,18 +1,18 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-
+/* 
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 @import 'swiper/swiper-bundle.css';
 @import 'swiper/css/effect-creative';
-@import 'swiper/css/effect-fade';
+@import 'swiper/css/effect-fade'; */
 
 
 
-.container {
+/* .container {
   @apply px-[35px] !w-full max-w-full md:px-[16px]
 
 }
@@ -22,7 +22,7 @@
 }
 
 .dark-title {
-  @apply text-dark font-roboto font-bold text-5xl md:text-3xl sm:text-xl;
+  @apply text-dark font-roboto font-bold text-5xl md:text-3xl sm:text-xl font-bold; 
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -79,4 +79,4 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background-color: #35CC61 !important;
   border-radius: 5px;
-}
+} */
