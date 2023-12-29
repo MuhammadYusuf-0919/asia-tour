@@ -8,21 +8,10 @@ import { useTranslations } from 'next-intl';
 
 export default function Index() {
   const a = useTranslations('home');
-  const t = useTranslations('footer');
-  const tours = [
-    {
-      name: t('Adventure'),
-      href: '/adventure'
-    },
-    {
-      name: t('Couple'),
-      href: '/couple'
-    },
-    {
-      name: t("Family"),
-      href: '/family'
-    }
-  ]
+
+  setTimeout(() => {
+    return
+  }, 1000)
   return (
     <div>
       <Header />
@@ -36,18 +25,7 @@ export default function Index() {
       <div className='pt-[111px]'>
         <BestOpinions title={a('Best Opinions')} span={a('Top selling')} />
       </div>
-      <Footer
-        follow={t('Follow us on')}
-        linkss={t('Links')}
-        Home={t('Home')}
-        Contact={t('Contact')}
-        Tours={t('Tours')}
-        tourType={t('Tour Type')}
-        contactUs={t('Contact us')}
-        copy={t('Copyright 2020 2023 by Alper Tungo Tour')}
-        tours={tours}
-        tour={t('tour')}
-      />
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
-import { ReactNode, Suspense } from "react";
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { ReactNode } from "react";
 export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: { locale: string } }) {
+  const messages = useMessages()
   return (
     <html lang={locale}>
       <head>
@@ -10,7 +12,9 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
         />
       </head>
       <body className='w-[100%] overflow-x-hidden'>
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -9,11 +9,27 @@ import phone from '@/assets/headerContact/phone.png'
 import email from '@/assets/headerContact/email.png'
 import { Zoom } from 'react-awesome-reveal'
 import { scrollToElement } from '@/useIt/scroll'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
-const Footer = ({ tours, tour, follow, linkss, Home, Contact, Tours, tourType, contactUs, copy }: any) => {
+const Footer = () => {
     const locale = useLocale()
     const pahtName = usePathname()
+    const t = useTranslations('footer')
+
+    const tours = [
+        {
+            name: t('Adventure'),
+            href: '/adventure'
+        },
+        {
+            name: t('Couple'),
+            href: '/couple'
+        },
+        {
+            name: t("Family"),
+            href: '/family'
+        }
+    ]
 
     return (
         <Zoom direction='up' triggerOnce>
@@ -21,7 +37,7 @@ const Footer = ({ tours, tour, follow, linkss, Home, Contact, Tours, tourType, c
                 <div className='w-full flex smd:flex-col smd:gap-[25px] items-center justify-between py-[65px] smd:py-[30px] border-b border-[#A0A0A0]'>
                     <div className='smd:flex smd:flex-col smd:items-center'>
                         <Image src={logo.src} alt='logo' width={125} height={125} className={`cursor-pointer lg:w-[100px] smd:w-[80px]`} />
-                        <p className='text-[24px] lg:text-[18px] smd:text-[16px]'>{follow}</p>
+                        <p className='text-[24px] lg:text-[18px] smd:text-[16px]'>{t('Follow us on')}</p>
                         <div className='flex  gap-[19px] pt-[15px]'>
                             <a href="https://instagramm.com" target='_blank'>
                                 <Image src={insta.src} alt='phone' width={35} height={35} className='lg:w-[30px] md:w-[25px] animate__tada animate__animated animate__infinite infinite animate__slow animation' />
@@ -36,38 +52,38 @@ const Footer = ({ tours, tour, follow, linkss, Home, Contact, Tours, tourType, c
                     </div>
                     <div className='flex gap-[100px] smd:w-full md:gap-[60px] smd:gap-x-0 smd:gap-y-[20px] smd:justify-between smd:grid smd:grid-cols-2'>
                         <div className='flex flex-col gap-[20px] smd:gap-[10px]'>
-                            <h4>{linkss}</h4>
+                            <h4>{t('Links')}</h4>
                             <div className='flex flex-col gap-[8px]'>
                                 <div className='group flex items-center gap-[10px] translate-x-[-23px] hover:translate-x-0 cursor-pointer duration-400'>
                                     <span className='bg-green w-[13px] h-[13px] duration-400 translate-x-[23px] rounded-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 m-0' />
-                                    <Link href={'/' + locale + '/'} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{Home}</Link>
+                                    <Link href={'/' + locale + '/'} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{t('Home')}</Link>
                                 </div>
                                 <div className='group flex items-center gap-[10px] translate-x-[-23px] hover:translate-x-0 cursor-pointer duration-400'>
                                     <span className='bg-green w-[13px] h-[13px] duration-400 translate-x-[23px] rounded-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 m-0' />
                                     <button className='text-[24px] lg:text-[18px] smd:text-[16px]'
                                         onClick={scrollToElement}>
-                                        {Contact}
+                                        {t("Contact")}
                                     </button>
                                 </div>
                                 <div className='group flex items-center gap-[10px] translate-x-[-23px] hover:translate-x-0 cursor-pointer duration-400'>
                                     <span className='bg-green w-[13px] h-[13px] duration-400 translate-x-[23px] rounded-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 m-0' />
-                                    <Link href={pahtName === locale + '/tours' ? pahtName : '/' + locale + '/tours'} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{Tours}</Link>
+                                    <Link href={pahtName === locale + '/tours' ? pahtName : '/' + locale + '/tours'} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{t("Tours")}</Link>
                                 </div>
                             </div>
                         </div>
                         <div className='flex flex-col gap-[20px] smd:gap-[10px]'>
-                            <h4>{tourType}</h4>
+                            <h4>{t('Tour Type')}</h4>
                             <div className='flex flex-col gap-[8px]'>
                                 {tours.map((l: any) => (
                                     <div key={l.name} className='group flex items-center gap-[10px] translate-x-[-23px] hover:translate-x-0 cursor-pointer duration-400'>
                                         <span className='bg-green w-[13px] h-[13px] duration-400 translate-x-[23px] rounded-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 m-0' />
-                                        <Link href={pahtName} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{l.name} {tour}</Link>
+                                        <Link href={pahtName} locale={locale} className='text-[24px] lg:text-[18px] smd:text-[16px]'>{l.name} {t('tour')}</Link>
                                     </div>
                                 ))}
                             </div>
                         </div>
                         <div className='flex flex-col gap-[20px] smd:gap-[10px] smd:w-[100%]'>
-                            <h4>{contactUs}</h4>
+                            <h4>{t('Contact us')}</h4>
                             <div className='flex flex-col gap-[8px]'>
                                 <div className='flex items-center gap-[30px] smd:gap-[15px]'>
                                     <Image src={phone.src} alt='phone' width={18} height={18} className='animate__tada animate__animated animate__infinite infinite animate__slow animation' />
@@ -89,7 +105,7 @@ const Footer = ({ tours, tour, follow, linkss, Home, Contact, Tours, tourType, c
                     </div>
                 </div>
                 <div className='flex justify-center py-[27px] smd:py-[20px]'>
-                    <span className='text-grey text-center text-[22px] smd:text-[18px] sm:text-[14px]'>{copy}</span>
+                    <span className='text-grey text-center text-[22px] smd:text-[18px] sm:text-[14px]'>{t('Copyright 2020 2023 by Alper Tungo Tour')}</span>
                 </div>
             </footer >
         </Zoom >

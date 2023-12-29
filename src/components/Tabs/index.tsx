@@ -5,14 +5,18 @@ import { data } from './data'
 import Image from 'next/image'
 import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps'
 import { Fade, Slide } from 'react-awesome-reveal'
+import { useTranslations } from 'next-intl'
 
-const TourTabs = ({ info, tourG, location, popP, Cities, Nights, Hotels }: any) => {
+const TourTabs = () => {
     const [tab, setTab] = useState(data[0])
+
+    const t = useTranslations('tours')
 
     const defaultState = {
         center: [tab.loc.long, tab.loc.lat],
         zoom: 15,
     };
+
     return (
         <Slide triggerOnce direction='up'>
             <div className='px-[123px] 2xl:px-[32px] sm:px-[16px] w-full flex flex-col gap-[36px] xl:gap-[20px]'>
@@ -30,13 +34,13 @@ const TourTabs = ({ info, tourG, location, popP, Cities, Nights, Hotels }: any) 
                                 panel: '!px-0 !pb-0 pt-[50px] md:!pt-[20px]'
                             }}
                         >
-                            <Tab key="Information" title={info} className='bg-[transparent] !border-none' >
+                            <Tab key="Information" title={t('Information')} className='bg-[transparent] !border-none' >
                                 <Fade direction='left'>
                                     <table className='w-full p-0'>
                                         <thead className='border-[2.5px] border-gray'>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-left pl-[23px] sm:pl-[16px] py-[10px] xl:text-[20px] sm:text-[16px]'>{Cities}</th>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{Nights}</th>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{Hotels}</th>
+                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-left pl-[23px] sm:pl-[16px] py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Cities")}</th>
+                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Nights")}</th>
+                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Hotels")}</th>
                                         </thead>
                                         <tbody>
                                             {tab.info.map((i, index) => (
@@ -50,7 +54,7 @@ const TourTabs = ({ info, tourG, location, popP, Cities, Nights, Hotels }: any) 
                                     </table>
                                 </Fade>
                             </Tab>
-                            <Tab key="Tour galery" title={tourG}>
+                            <Tab key="Tour galery" title={t('Tour galery')}>
                                 <div className='w-full smd:w-full grid grid-cols-2 gap-y-[15px] xl:gap-[15px] gap-x-[33px]'>
                                     {tab.galery.map(g => (
                                         <Fade key={g} direction='left'>
@@ -61,7 +65,7 @@ const TourTabs = ({ info, tourG, location, popP, Cities, Nights, Hotels }: any) 
                                     ))}
                                 </div>
                             </Tab>
-                            <Tab key="Location" title={location}>
+                            <Tab key="Location" title={t('Location')}>
                                 <Fade direction='left' className='xl:!animate-none'>
                                     <div className='w-[100%] aspect-[533/480]'>
                                         <YMaps>
@@ -76,7 +80,7 @@ const TourTabs = ({ info, tourG, location, popP, Cities, Nights, Hotels }: any) 
                     </div>
                     <div className='w-[500px] smd:w-full translate-y-[117px] xl:translate-y-[103px] lg:translate-y-0 shadow-card h-max rounded-t-[10px]'>
                         <div className='px-[25px] sm:px-[10px] py-[16px] xl:py-[10px] bg-green rounded-t-[10px]'>
-                            <h4 className='text-[white]'>{popP}</h4>
+                            <h4 className='text-[white]'>{t('Popular places')}</h4>
                         </div>
                         <div className='flex flex-col gap-[25px] px-[25px] sm:px-[10px] pt-[25px] bg-[white] overflow-y-auto h-[410px] pb-[5px] xl:h-[360px] rounded-b-[10px] scrollbar'>
                             {data.map((d, index) => (

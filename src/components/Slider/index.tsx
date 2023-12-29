@@ -1,5 +1,5 @@
 'use client'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
@@ -8,10 +8,12 @@ import Image from 'next/image';
 import { Button } from '@nextui-org/react';
 import arrow from '@/assets/Slider/sliderArrow.png'
 import { scrollToElement } from '@/useIt/scroll';
+import { usePathname } from 'next/navigation';
 
 const Slider = () => {
     SwiperCore.use([Autoplay, Navigation]);
     const swiperRef = useRef<any>(null);
+    const pathname = usePathname()
 
     const slideNext = () => {
         swiperRef.current.swiper.slideNext();
@@ -29,11 +31,12 @@ const Slider = () => {
         effect: 'fade',
         speed: 1500
     };
-
-    setTimeout(() => {
-        swiperRef.current &&
-            swiperRef.current.swiper.slideTo(data.length)
-    }, 0)
+    useEffect(() => {
+        setTimeout(() => {
+            swiperRef.current &&
+                swiperRef.current.swiper.slideTo(data.length)
+        }, 0)
+    }, [pathname])
 
     return (
         <div className='w-full h-max animate__animated animate__fadeInUp z-0'>
@@ -41,6 +44,8 @@ const Slider = () => {
                 {...swiperParams}
                 ref={swiperRef}
                 modules={[EffectFade]}
+                slideNextClass='opacity-0'
+                slidePrevClass='opacity-0'
             >
                 {data.map((d, index) => (
                     <SwiperSlide key={d.des} className='w-full h-max'>
