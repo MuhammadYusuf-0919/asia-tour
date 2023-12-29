@@ -10,9 +10,7 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
         />
       </head>
       <body className='w-[100%] overflow-x-hidden'>
-        <Suspense fallback={"Loading"}>
-          {children}
-        </Suspense>
+        {children}
       </body>
     </html>
   );

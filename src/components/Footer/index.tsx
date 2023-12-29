@@ -17,7 +17,7 @@ const Footer = ({ tours, tour, follow, linkss, Home, Contact, Tours, tourType, c
 
     return (
         <Zoom direction='up' triggerOnce>
-            <footer className='container animate__animated animate__zoomInUp'>
+            <footer className='container animate__animated animate__zoomInUp bg-[#212121] text-[white]'>
                 <div className='w-full flex smd:flex-col smd:gap-[25px] items-center justify-between py-[65px] smd:py-[30px] border-b border-[#A0A0A0]'>
                     <div className='smd:flex smd:flex-col smd:items-center'>
                         <Image src={logo.src} alt='logo' width={125} height={125} className={`cursor-pointer lg:w-[100px] smd:w-[80px]`} />

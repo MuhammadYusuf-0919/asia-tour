@@ -8,7 +8,7 @@ import youtube from '@/assets/headerContact/youtube.png'
 import Image from 'next/image'
 const HeaderContact = () => {
     return (
-        <div className='flex smd:flex-col container text-[white] smd:gap-[16px] justify-between py-[33px] md:py-[16px] bg-dark'>
+        <div className='flex smd:flex-col container text-[white] smd:gap-[16px] justify-between py-[33px] md:py-[16px] bg-[#212121]'>
             <div className='flex items-center gap-[50px] lg:gap-[25px] sm:gap-[10px] smd:justify-between sm:flex-col sm:items-start'>
                 <a href='tel: +998999999999' className='flex items-center gap-[10px] lg:gap-[5px] group'>
                     <Image src={phone.src} alt='phone' width={35} height={35} className='lg:w-[30px] md:w-[25px] smd:w-[20px] animate__tada animate__animated animate__infinite infinite animate__slow ' />
