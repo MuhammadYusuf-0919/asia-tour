@@ -1,5 +1,31 @@
 {
-    "home":{
-        "title":"Qalesan endi"
-    }
+  "home": {
+    "Top selling": "Top selling",
+    "Best Tours": "Best Tours",
+    "Best Abroad Tours": "Best Abroad Tours",
+    "Best Opinions": "Best Opinions"
+  },
+  "footer": {
+    "Follow us on": "Follow us on",
+    "Links": "Links",
+    "Tour Type": "Tour Type",
+    "Contact us": "Contact us",
+    "Home": "Home",
+    "Contact": "Contact",
+    "Tours": "Tours",
+    "tour": "tour",
+    "Adventure": "Adventure",
+    "Couple": "Couple",
+    "Family": "Family",
+    "Copyright 2020 2023 by Alper Tungo Tour": "Copyright 2020 2023 by Alper Tungo Tour"
+  },
+  "tours": {
+    "Information": "Information",
+    "Tour galery": "Tour galery",
+    "Location": "Location",
+    "Popular places": "Popular places",
+    "Cities": "Cities",
+    "Nights": "Nights",
+    "Hotels": "Hotels"
+  }
 }

@@ -1,7 +1,6 @@
-import Header from '@/components/Header';
 import '@/styles/globals.css'
-import { ReactNode } from "react";
-export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: any }) {
+import { ReactNode, Suspense } from "react";
+export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: { locale: string } }) {
   return (
     <html lang={locale}>
       <head>
@@ -10,10 +9,8 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </head>
-      <body>
-        <Header />
+      <body className='w-[100%] overflow-x-hidden'>
         {children}
-        {/* Footer */}
       </body>
     </html>
   );
