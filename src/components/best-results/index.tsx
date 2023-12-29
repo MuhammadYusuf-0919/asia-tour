@@ -68,7 +68,7 @@ const BestResults: React.FC = () => {
               <ArrowImage url={bestResultsImage.src} />
             </Slide>
             <Slide direction="up" triggerOnce>
-              <Card>
+              <Card className='h-full'>
                 <BlockHeader title={t("All Tags")} />
                 <div className="grid grid-cols-4 md:grid-cols-3 smd:grid-cols-2 sm:grid-cols-1 py-[20px] px-[25px] gap-[20px]">
                   {allTagsData.map((value) => (

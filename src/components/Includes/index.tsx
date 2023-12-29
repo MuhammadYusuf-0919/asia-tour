@@ -10,7 +10,7 @@ function Includes() {
   const t = useTranslations("home")
   return (
     <Slide triggerOnce direction="up">
-      <div className="container-lg py-[80px] md:py-[60px] sm:py-[40px] flex smd:flex-col gap-[50px] md:gap-[40px] sm:gap-[30px]  smd:gap-y-[30px]">
+      <div className="container-lg py-[80px] md:py-[60px] sm:py-[40px] flex md:flex-col md:grid md:justify-center gap-[50px] md:gap-[40px] sm:gap-[30px]  smd:gap-y-[30px]">
         <Slide direction="left" triggerOnce>
           <IncludesList title={t("Include")} data={includeData} />
         </Slide>

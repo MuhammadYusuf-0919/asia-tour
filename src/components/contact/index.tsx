@@ -53,18 +53,18 @@ function Contact({ main }: ContactProps) {
     <Slide triggerOnce direction="up">
       <div
         id="contact"
-        className="container-lg gap-x-[100px] py-[80px] md:py-[60px] sm:py-[40px] py-[40px] md:py-[30px] sm:py-[20px] grid gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px]"
+        className="container-lg py-[80px] grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
       >
         {main && (
           <>
             <Slide direction="up" triggerOnce>
-              <div className="flex flex-col items-start gap-4">
+              <div className="flex flex-col items-start">
                 <span>{t("With Easilly")}</span>
-                <h3 className="dark-title">{t("Contact us")}</h3>
+                <h2>{t("Contact us")}</h2>
               </div>
             </Slide>
             <div className="grid grid-cols-2 md:grid-cols-1 justify-between gap-x-[90px] md:gap-y-[60px] md:justify-center">
-              <Fade direction="left">
+              <Fade direction="left" className="pl-[30px] md:px-[20px]">
                 <ArrowImage url={operator.src} />
               </Fade>
               <Fade direction="right">
@@ -77,69 +77,11 @@ function Contact({ main }: ContactProps) {
                   ))}
                 </Card>
               </Fade>
-    <div
-      id="contact"
-      className="container-lg gap-x-[100px]  py-[40px] md:py-[30px] sm:py-[20px] grid gap-y-[55px] smd:gap-y-[40px] sm:gap-y-[30px]"
-    >
-      <h3 className="dark-title">{t("Contact us")}</h3>
-      <div className="grid grid-cols-2 md:grid-cols-1 justify-between gap-x-[90px] md:gap-y-[60px] md:justify-center">
-        <ArrowImage url={operator.src} />
-        <Card className="grid py-[20px] px-[30px] gap-[20px] animate__animate animate__backInRight animate__backOutRight">
-          <h3 className="text-black font-roboto text-2xl font-semibold">
-            {t("Contact Info")}
-          </h3>
-          {contactData.map((info, index) => (
-            <InfoItem key={index} {...info} />
-          ))}
-        </Card>
-      </div>
-
-      <Card className="p-[50px] smd:p-[30px] sm:p-[20px] gap-y-[50px] smd:gap-y-[40px] sm:gap-y-[30px] animate__animate animate__backInUp animate__backOutUp">
-        <form onSubmit={handleSubmit(onSubmit)} className="contents">
-          <div className="font-roboto">
-            <h3 className="text-black text-2xl font-semibold">
-              {t("Contact-title")}
-            </h3>
-            <p className="text-gray-400 text-lg">{t("Contact-desc")}</p>
-          </div>
-          <div className="grid gap-y-[30px]">
-            <div className="flex items-center gap-x-[100px]">
-              <Input
-                type="text"
-                label={t("Your full name")}
-                labelPlacement="outside"
-                classNames={inputStyles}
-                placeholder="Johnson Bernard"
-                isInvalid={errors.name && true}
-                color={errors.name && "danger"}
-                startContent={<img src={userIcon.src} alt="user icon" />}
-                errorMessage={errors.name && "Please enter a valid name"}
-                {...register("name", { required: "This field is required" })}
-              />
-
-              <Input
-                type="number"
-                label={t("Your phone number")}
-                labelPlacement="outside"
-                classNames={inputStyles}
-                placeholder="+998 92 55 56"
-                isInvalid={errors.number && true}
-                color={errors.number ? "danger" : "default"}
-                {...register("number", {
-                  required: "This field is required",
-                  pattern: {
-                    value: /^\+?\d+$/,
-                    message: "Invalid phone number format",
-                  },
-                })}
-                errorMessage={errors.number && "Please enter a valid number"}
-                startContent={<img src={phoneCall.src} alt="phone icon" />}
-              />
             </div>
           </>
         )}
         <Slide direction="up" triggerOnce>
-          <Card className="p-[50px] smd:p-[30px] sm:p-[20px] gap-y-[50px] smd:gap-y-[40px] sm:gap-y-[30px]">
+          <Card className="contact p-[50px] smd:p-[30px] sm:p-[20px] gap-y-[50px] smd:gap-y-[40px] sm:gap-y-[30px]">
             <form onSubmit={handleSubmit(onSubmit)} className="contents">
               <div className="font-roboto">
                 <h3 className="text-black text-2xl font-semibold">
@@ -151,6 +93,7 @@ function Contact({ main }: ContactProps) {
                 <div className="flex md:flex-col md:gap-y-[20px] items-center gap-x-[100px]">
                   <Input
                     type="text"
+                    variant="bordered"
                     label={t("Your full name")}
                     labelPlacement="outside"
                     classNames={inputStyles}
@@ -165,7 +108,8 @@ function Contact({ main }: ContactProps) {
                   />
 
                   <Input
-                    type="number"
+                    type="phone"
+                    variant="bordered"
                     label={t("Your phone number")}
                     labelPlacement="outside"
                     classNames={inputStyles}
@@ -174,10 +118,10 @@ function Contact({ main }: ContactProps) {
                     color={errors.number ? "danger" : "default"}
                     {...register("number", {
                       required: "This field is required",
-                      pattern: {
-                        value: /^\+?\d+$/,
-                        message: "Invalid phone number format",
-                      },
+                      // pattern: {
+                      //   // value: /^\+?\d+$/,
+                      //   message: "Invalid phone number format",
+                      // },
                     })}
                     errorMessage={
                       errors.number && "Please enter a valid number"
@@ -185,9 +129,8 @@ function Contact({ main }: ContactProps) {
                     startContent={<img src={phoneCall.src} alt="phone icon" />}
                   />
                 </div>
-                <Input variant="flat" type="email" label="Email" />
                 <Textarea
-                  variant="flat"
+                  variant="bordered"
                   label={t("Your message")}
                   labelPlacement="outside"
                   placeholder="message"
@@ -219,7 +162,7 @@ function Contact({ main }: ContactProps) {
                   size="lg"
                   type="submit"
                   color="primary"
-                  className="w-1/5 md:w-full ml-auto px-[30px] py-[16px] lg:px-[20px] lg:py-[13px] text-[24px] md:text-[18px] sm:text-[14px] lg:text-[20px] md:text-[18px] md:px-[8px] md:h-[40px] sm:h-[30px] bg-green rounded-[5px] animate__animated animate__zoomInUp animate__slow"
+                  className="w-1/5 md:w-full ml-auto px-[30px] py-[16px] lg:px-[20px] lg:py-[13px] text-[24px]  sm:text-[14px] lg:text-[20px] md:text-[18px] md:px-[8px] md:h-[40px] sm:h-[30px] bg-green rounded-[5px] animate__animated animate__zoomInUp animate__slow"
                 >
                   {t("Send")}
                 </Button>

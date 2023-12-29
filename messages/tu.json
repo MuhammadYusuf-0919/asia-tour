@@ -17,9 +17,6 @@
     "Enter your message": "Mesajınızı girin",
     "Your full name": "Tam adınız",
     "Your phone number": "Telefon numaranız",
-    "Your email": "E-postanız"
-  },
-  "second": {
     "Best Results": "En İyi Sonuçlar",
     "All Tags": "Tüm Etiketler",
     "Flying": "Uçan",
@@ -46,7 +43,8 @@
     "Best Tours": "En İyi Turlar",
     "Best Abroad Tours": "En İyi Yurtdışı Turlar",
     "Best Opinions": "En İyi Görüşler",
-    "With Easilly": "Kolayca"
+    "With Easilly": "Kolayca",
+    "Top Agency": "Top Ajans"
   },
   "footer": {
     "Follow us on": "Bizi Takip Edin",
