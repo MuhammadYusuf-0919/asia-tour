@@ -3,13 +3,25 @@
 @tailwind utilities;
 
 
+
 @font-face {
   font-family: Comfortaa;
   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 }
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/swiper-bundle.css';
+@import 'swiper/css/effect-creative';
+@import 'swiper/css/effect-fade';
+
+::selection{
+  @apply bg-green text-[white]
+}
 
 .container {
   @apply px-[35px] !w-full max-w-full md:px-[16px]
+
 }
 
 .container-lg {
@@ -41,24 +53,33 @@
 }
 
 h1 {
-  @apply text-[55px] text-[white]
+  @apply text-[56px] text-[white] lg:text-[40px] md:text-[32px] sm:text-[25px]
 }
 
 h2 {
-  @apply text-[48px] text-[#000]
+  @apply text-[48px] xl:text-[30px] text-[#000] font-bold md:text-[35px] smd:text-[30px] sm:text-[26px]
+}
+h4{
+  @apply text-[32px] xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[18px] 
+}
+span{
+  @apply text-[24px] text-grey mb-[-10px] md:text-[18px] sm:text-[16px]
+}
+.dropdown span{
+  @apply m-0 text-[18px] sm:text-[16px]
+}
+.green span{
+  @apply !text-green font-bold
+}
+body::-webkit-scrollbar{
+  background-color: #DBDBDB;
 }
 
-.react-datepicker {
-  /* Qo'shimcha stil o'zgartirishlarni qo'shing */
+body{
+  scrollbar-color:#35CC61 #DBDBDB;
+  margin: 0 !important;
 }
 
-.react-datepicker__header {
-  /* Header stilini o'zgartiring */
-}
-
-.react-datepicker__day {
-  /* Kalendar kuni stilini o'zgartiring */
-}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -67,3 +88,7 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+body::-webkit-scrollbar-thumb{
+  background-color: #35CC61 !important;
+  border-radius: 5px;
+}

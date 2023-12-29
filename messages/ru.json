@@ -43,3 +43,33 @@
         "Not Include": "Не включено"
     }
 }
+  "home": {
+    "Top selling": "Лучшие продажи",
+    "Best Tours": "Лучшие туры",
+    "Best Abroad Tours": "Лучшие зарубежные туры",
+    "Best Opinions": "Лучшие Мнения"
+  },
+  "footer": {
+    "Follow us on": "Подписывайтесь на нас в",
+    "Links": "Ссылки",
+    "Tour Type": "Тип тура",
+    "Contact us": "Свяжитесь с нами",
+    "Home": "Главная",
+    "Contact": "Контакты",
+    "Tours": "Туры",
+    "tour": "туры",
+    "Adventure": "Приключения",
+    "Couple": "Пара",
+    "Family": "Семья",
+    "Copyright 2020 2023 by Alper Tungo Tour": "Авторское право 2020 2023 гг. Alper Tungo Tour"
+  },
+  "tours": {
+    "Information": "Информация",
+    "Tour galery": "Галерея туров",
+    "Location": "Местоположение",
+    "Popular places": "Популярные места",
+    "Cities": "Города",
+    "Nights": "Ночи",
+    "Hotels": "Отели"
+  }
+}

@@ -7,8 +7,11 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-
-    // Or if using `src` directory:
+     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/themes/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -24,6 +27,17 @@ const config: Config = {
       'greenLighter': '#DCFFE6',
       'dark': '#000',
       'danger': '#F54180'
+   
+  ],
+  theme: {
+    colors:{
+      "green":'#35CC61',
+      'grey':'#838383',
+      'gray':"#A0A0A0",
+      'lighter':'#EBEBEB',
+      'dark':'#000',
+      'darker':"rgba(0, 0, 0, 0.65)",
+      'greener':'rgba(53, 204, 97, 0.70)'
     },
     screens: {
       '2xl': { 'max': '1750px' },
@@ -33,6 +47,9 @@ const config: Config = {
       'md': { 'max': '1000px' },
       'smd': { 'max': '770px' },
       'sm': { 'max': '456px' }
+    },
+    boxShadow:{
+      'card':"0px 0px 25px 0px rgba(0, 0, 0, 0.25)"
     },
     extend: {
     },

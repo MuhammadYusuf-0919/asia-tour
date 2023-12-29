@@ -45,5 +45,32 @@
     "Enter your message": "Mesajınızı girin",
     "Include": "Dahil et",
     "Not Include": "Dahil Değil"
+    "Top selling": "En Çok Satanlar",
+    "Best Tours": "En İyi Turlar",
+    "Best Abroad Tours": "En İyi Yurtdışı Turlar",
+    "Best Opinions": "En İyi Görüşler"
+  },
+  "footer": {
+    "Follow us on": "Bizi Takip Edin",
+    "Links": "Bağlantılar",
+    "Tour Type": "Tur Türü",
+    "Contact us": "Bizimle İletişime Geçin",
+    "Home": "Ana Sayfa",
+    "Contact": "İletişim",
+    "Tours": "Turlar",
+    "tour": "tur",
+    "Adventure": "Macera",
+    "Couple": "Çift",
+    "Family": "Aile",
+    "Copyright 2020 2023 by Alper Tungo Tour": "Telif Hakkı 2020 2023 Alper Tungo Tour"
+  },
+  "tours": {
+    "Information": "Bilgi",
+    "Tour galery": "Tur galerisi",
+    "Location": "Konum",
+    "Popular places": "Popüler yerler",
+    "Cities": "Şehirler",
+    "Nights": "Geceler",
+    "Hotels": "Oteller"
   }
 }
