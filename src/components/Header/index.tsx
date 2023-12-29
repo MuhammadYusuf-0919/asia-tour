@@ -60,7 +60,7 @@ const Header = () => {
                             </DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
-                    <div className={`w-[52px] h-[40px] lg:w-[40px] lg:h-[30px] smd:h-[25px] smd:w-[35px] cursor-pointer flex flex-col justify-between z-[999] duration-400 ${drawer && 'absolute right-[35px] md:right-[16px] z-[999]'}`} onClick={() => setDrawer(!drawer)}>
+                    <div className={`w-[52px] h-[40px] lg:w-[40px] lg:h-[30px] smd:h-[25px] smd:w-[35px] cursor-pointer flex flex-col justify-between  duration-400 ${drawer && 'absolute right-[35px] md:right-[16px] !z-[100001]'}`} onClick={() => setDrawer(!drawer)}>
                         <span className={`w-full h-[8px] lg:h-[6px] duration-400 smd:h-[5px] rounded-full bg-green ${drawer && 'rotate-45 translate-y-[200%]'} m-0`} />
                         <span className={`w-full duration-300 h-[8px] lg:h-[6px] smd:h-[5px] rounded-full bg-green ${drawer && 'opacity-0'} m-0`} />
                         <span className={`w-full h-[8px] lg:h-[6px] duration-400 smd:h-[5px] rounded-full bg-green ${drawer && "-rotate-45 translate-y-[-200%]"} m-0`} />
@@ -69,8 +69,6 @@ const Header = () => {
                 </aside>
                 <Drawer open={drawer} setOpen={setDrawer} pathname={pathname} locale={locale} />
             </div >
-            <div className={`fixed w-screen bottom-0 opacity-100 h-screen mb-[-10px] pointer-events-none 
-                overflow-hidden z-[98] bg-opacity-0 hidden duration-0 inset-0 ${drawer ? '!pointer-events-none backdrop-blur-lg !flex opacity-100 ' : ''}`} />
         </header>
     )
 }

@@ -10,9 +10,6 @@ import Header from '@/components/Header';
 import Slider from '@/components/Slider';
 
 export default function Index() {
-  setTimeout(() => {
-    return
-  }, 1000)
 
   const a = useTranslations('home')
 
