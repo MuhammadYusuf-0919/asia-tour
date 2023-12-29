@@ -1,6 +1,9 @@
-import '@/styles/globals.css'
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { ReactNode } from "react";
+
+import "@/styles/globals.css"
+import { ReactNode } from "react"
+import Header from "@/components/Header"
+import { NextIntlClientProvider, useMessages } from "next-intl"
+
 export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: { locale: string } }) {
   const messages = useMessages()
   return (
@@ -17,5 +20,5 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
         </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }
