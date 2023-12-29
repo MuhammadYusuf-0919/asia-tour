@@ -1,8 +1,6 @@
-import BestResults from '@/components/best-results';
 import ContactUs from '@/components/contac-us-main';
 import Contact from '@/components/contact';
 import Includes from '@/components/Includes';
-import TopTours from '@/components/TopTours';
 import { useTranslations } from 'next-intl';
 import BestAbroadTours from '@/components/BestAbroadTours';
 import BestOpinions from '@/components/BestOpinions';
@@ -15,16 +13,18 @@ export default function Index() {
   setTimeout(() => {
     return
   }, 1000)
-  
+
+  const a = useTranslations('home')
+
   return (
     <div>
       <Header />
       <Slider />
       <div className='container pt-[111px] flex flex-col gap-[111px]'>
         <div className='flex flex-col gap-[111px] container'>
-          <Includes/>
-          <Contact/>
-          <ContactUs/>
+          <Includes />
+          <Contact />
+          <ContactUs />
           <BestTours title={a('Best Tours')} span={a('Top selling')} />
           <BestAbroadTours title={a('Best Abroad Tours')} span={a('Top selling')} />
         </div>

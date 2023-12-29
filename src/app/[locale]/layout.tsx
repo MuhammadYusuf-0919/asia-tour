@@ -1,7 +1,6 @@
 
 import "@/styles/globals.css"
 import { ReactNode } from "react"
-import Header from "@/components/Header"
 import { NextIntlClientProvider, useMessages } from "next-intl"
 
 export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: { locale: string } }) {
