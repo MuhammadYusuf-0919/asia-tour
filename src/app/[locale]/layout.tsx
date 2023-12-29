@@ -1,7 +1,16 @@
-import Header from '@/components/Header';
-import '@/styles/globals.css'
-import { ReactNode } from "react";
-export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: any }) {
+import "@/styles/globals.css"
+import { ReactNode } from "react"
+import Header from "@/components/Header"
+import { NextIntlClientProvider, useMessages } from "next-intl"
+
+export default function LocaleLayout({
+  children,
+  params: { locale },
+}: {
+  children: ReactNode
+  params: any
+}) {
+  const messages = useMessages()
   return (
     <html lang={locale}>
       <head>
@@ -11,10 +20,12 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
         />
       </head>
       <body>
-        <Header />
-        {children}
-        {/* Footer */}
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          {/* Footer */}
+        </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }

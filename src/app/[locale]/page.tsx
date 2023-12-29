@@ -1,16 +1,21 @@
+import BestResults from '@/components/best-results';
+import ContactUs from '@/components/contac-us-main';
+import Contact from '@/components/contact';
+import Includes from '@/components/Includes';
+import TopTours from '@/components/TopTours';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Index() {
-  const t = useTranslations('home');
   return (
-    <div className='container bg-green'>
-      <h1>{t('title')}</h1>
-      <div className='flex gap-5'>
-        <Link href='/en' locale='en'>en</Link>
-        <Link href='/ru' locale='ru'>ru</Link>
-        <Link href='/tu' locale='tu'>tu</Link>
-      </div>
-    </div>
+    <>
+      <h1>Home</h1>
+      <Includes />
+      <BestResults />
+      <TopTours />
+      <Contact />
+      <ContactUs />
+    </>
   )
 }
+

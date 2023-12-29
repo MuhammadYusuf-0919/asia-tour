@@ -1,0 +1,206 @@
+/* Define variables */
+:root {
+    --border-color: #ddd;
+    --selectable-background-color: #ffffff;
+    --primary-color: #666;
+    --selected-background-color: #35CC61;
+    --hover-background-color: #E4E4E7;
+    --selected-color: white;
+}
+
+/* Style for .SG-datepicker */
+.SG-datepicker {
+    user-select: none;
+    position: relative;
+    margin: 0.5em 0 1em;
+}
+
+.SG-datepicker__calendar-container {
+    margin-top: 10px;
+    position: absolute;
+    /* border: 1px solid rgb(203, 203, 203); */
+    background-color: white;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 40;
+    /* width: 100%; */
+    box-sizing: border-box;
+    height: 22em;
+    min-width: 300px;
+}
+
+.SG-datepicker__today {
+    cursor: pointer;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+
+.SG-datepicker__today:hover {
+    color: var(--hover-background-color);
+}
+
+.SG-datepicker__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.SG-datepicker__navigation-prev,
+.SG-datepicker__navigation-next {
+    cursor: pointer;
+}
+
+.SG-datepicker__navigation-prev svg,
+.SG-datepicker__navigation-next svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.SG-datepicker__navigation-prev svg {
+    transform: rotate(90deg);
+}
+
+.SG-datepicker__navigation-next svg {
+    transform: rotate(-90deg);
+}
+
+.SG-datepicker__input-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+/* .SG-datepicker__input-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px var(--primary-color) solid;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+} */
+
+.SG-datepicker__input-container .calendar-icon {
+    cursor: pointer;
+    fill: var(--hover-background-color);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    height: 1.3em;
+    transform: translateY(-50%);
+}
+
+.SG-datepicker__body {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.SG-datepicker__header th {
+    width: auto;
+    border-bottom: 1px solid #2e2e2e;
+    color: #999;
+    font-size: 0.9em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    height: 2em;
+    cursor: default;
+}
+
+.SG-datepicker__day {
+    width: 14.2857142857%;
+    box-sizing: border-box;
+    background: var(--selectable-background-color);
+    color: var(--primary-color);
+    font-size: 0.875em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border-collapse: collapse;
+    cursor: pointer;
+    height: 2.5em;
+    transition: background-color 0.05s ease;
+    border-radius: 50%;
+}
+
+.SG-datepicker__day.off-month {
+    opacity: 0.5;
+}
+
+.SG-datepicker__day.today {
+    color: #35CC61;
+}
+
+.SG-datepicker__day:hover {
+    background-color: var(--hover-background-color);
+    color: var(--selected-color);
+}
+
+.SG-datepicker__day.selected {
+    background-color: var(--selected-background-color);
+    color: var(--selected-color);
+}
+
+.SG-datepicker__month-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 2.5em);
+    margin-top: 45px;
+    grid-gap: 10px;
+}
+
+.SG-datepicker__year-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 2.5em);
+    grid-gap: 5px;
+}
+
+.SG-datepicker__year,
+.SG-datepicker__month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 0.875em;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--selectable-background-color);
+    color: var(--primary-color);
+}
+
+.SG-datepicker__year:hover,
+.SG-datepicker__month:hover {
+    background-color: var(--hover-background-color);
+    color: var(--selected-color);
+}
+
+.SG-datepicker__year.selected,
+.SG-datepicker__month.selected {
+    background-color: var(--selected-background-color);
+    color: var(--selected-color);
+}
+
+.SG-datepicker button {
+    background-color: var(--selectable-background-color);
+    color: var(--primary-color);
+    border: var(--border-color) 1px solid;
+    border-radius: 5px;
+    height: 2.5em;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+.SG-datepicker button:hover {
+    background-color: var(--hover-background-color);
+    color: var(--selected-color);
+}
