@@ -13,7 +13,7 @@ interface thisProps {
     locale: string
 }
 const Drawer = ({ open, setOpen, pathname, locale }: thisProps) => {
-    const bodyRef = useRef(typeof window !== 'undefined' && window.document.querySelector('body'));
+    const bodyRef = useRef(window.document.querySelector('body'));
 
     useEffect(() => {
         const updatePageScroll = () => {
@@ -25,7 +25,9 @@ const Drawer = ({ open, setOpen, pathname, locale }: thisProps) => {
                 }
             }
         };
-        updatePageScroll();
+        if (typeof window !== 'undefined') {
+            updatePageScroll();
+        }
     }, [open]);
 
     return ReactDOM.createPortal(
