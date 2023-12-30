@@ -56,7 +56,7 @@ h4{
   @apply text-[32px] xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[18px] 
 }
 span{
-  @apply text-[24px] text-grey mb-[-10px] md:text-[18px] sm:text-[16px]
+  @apply text-[24px] text-grey mb-[-10px] lg:text-[18px] md:text-[16px] sm:text-[14px]
 }
 .dropdown span{
   @apply m-0 text-[18px] sm:text-[16px]

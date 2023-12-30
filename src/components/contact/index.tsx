@@ -65,10 +65,10 @@ function Contact({ main }: ContactProps) {
               </div>
             </Slide>
             <div className="grid grid-cols-2 md:grid-cols-1 justify-between gap-x-[90px] md:gap-y-[60px] md:justify-center">
-              <Fade direction="left" className="pl-[30px] md:px-[20px]">
+              <Fade direction="left" triggerOnce className="pl-[30px] md:px-[20px]">
                 <ArrowImage url={operator.src} />
               </Fade>
-              <Fade direction="right">
+              <Fade direction="right" triggerOnce>
                 <Card className="grid py-[20px] p-[40px] md:p-[30px] sm:p-[20px] gap-[20px] shadow-0px 0px 25px 0px rgba(0, 0, 0, 0.20) animate__animate animate__backInRight animate__backOutRight">
                   <h3 className="text-black font-roboto text-2xl font-semibold">
                     {t("Contact Info")}
