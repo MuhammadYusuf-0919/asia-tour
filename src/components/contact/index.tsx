@@ -53,7 +53,7 @@ function Contact({ main }: ContactProps) {
     <Slide triggerOnce direction="up">
       <div
         id="contact"
-        className="grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
+        className="container-lg py-[80px] grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
       >
         {main && (
           <>
@@ -93,6 +93,7 @@ function Contact({ main }: ContactProps) {
                 <div className="flex md:flex-col md:gap-y-[20px] items-center gap-x-[100px]">
                   <Input
                     type="text"
+                    variant="bordered"
                     label={t("Your full name")}
                     labelPlacement="outside"
                     classNames={inputStyles}
@@ -108,6 +109,7 @@ function Contact({ main }: ContactProps) {
 
                   <Input
                     type="phone"
+                    variant="bordered"
                     label={t("Your phone number")}
                     labelPlacement="outside"
                     classNames={inputStyles}
@@ -116,10 +118,10 @@ function Contact({ main }: ContactProps) {
                     color={errors.number ? "danger" : "default"}
                     {...register("number", {
                       required: "This field is required",
-                      pattern: {
-                        value: /^\+?\d+$/,
-                        message: "Invalid phone number format",
-                      },
+                      // pattern: {
+                      //   // value: /^\+?\d+$/,
+                      //   message: "Invalid phone number format",
+                      // },
                     })}
                     errorMessage={
                       errors.number && "Please enter a valid number"
@@ -127,9 +129,8 @@ function Contact({ main }: ContactProps) {
                     startContent={<img src={phoneCall.src} alt="phone icon" />}
                   />
                 </div>
-                <Input variant="flat" type="email" label="Email" />
                 <Textarea
-                  variant="flat"
+                  variant="bordered"
                   label={t("Your message")}
                   labelPlacement="outside"
                   placeholder="message"
