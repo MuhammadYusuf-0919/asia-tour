@@ -10,7 +10,7 @@ function TopTours() {
   const t = useTranslations("home")
   return (
     <Slide direction="up" triggerOnce>
-      <div className="container-lg py-[50px] flex smd:flex-col items-start justify-between gap-x-[85px] md:gap-x-[60px] smd:gap-y-[40px]">
+      <div className="container-lg py-[50px] flex md:flex-col md:gap-y-[40px] sm:gap-y-[30px] items-start justify-between gap-x-[85px] md:gap-x-[60px] smd:gap-y-[40px]">
         <Slide direction="up" triggerOnce>
           <div className="w-full grid gap-y-[30px] md:gap-y-[20px] sm:gap-y-[14px]">
             <div className="flex flex-col items-start gap-4">
