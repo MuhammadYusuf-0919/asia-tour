@@ -11,6 +11,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { Button, Card, Input, Textarea } from "@nextui-org/react"
 import { useTranslations } from "next-intl"
 import { Fade, Slide } from "react-awesome-reveal"
+import StarRating from "../stars-rating"
 
 interface FormData {
   name: string
@@ -158,6 +159,7 @@ function Contact({ main }: ContactProps) {
                     ],
                   }}
                 />
+                <StarRating />
                 <Button
                   size="lg"
                   type="submit"

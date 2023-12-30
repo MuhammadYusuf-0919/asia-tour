@@ -7,6 +7,7 @@ import Static from '@/components/static'
 import Contact from '@/components/contact'
 import Includes from '@/components/Includes'
 import BestResults from '@/components/best-results'
+import Blocks from '@/components/blocks'
 
 const Tours = () => {
     return (
@@ -21,6 +22,7 @@ const Tours = () => {
                     <BestResults />
                     <Tabs />
                     <Includes />
+                    {/* <Blocks /> */}
                     <Contact />
                 </div>
             </div>

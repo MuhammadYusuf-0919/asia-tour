@@ -33,7 +33,6 @@ interface FormValues {
 // Define component
 const BestResults: React.FC = () => {
   const t = useTranslations("home")
-  const [selectedTag, setSelectedTag] = React.useState<string | null>(null)
 
   const {
     control,
@@ -43,11 +42,6 @@ const BestResults: React.FC = () => {
     formState: { errors },
   } = useForm<FormValues>()
 
-  const handleTagClick = (value: string) => {
-    setSelectedTag(value)
-    setValue("selectedTag", value)
-  }
-
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     console.log("Form data:", data)
     // Handle the form submission logic here
@@ -56,7 +50,7 @@ const BestResults: React.FC = () => {
   return (
     <Slide triggerOnce direction="up">
       <div className="grid gap-y-[40px] md:gap-y-[30px] sm:gap-y-[20px]">
-        <Slide direction="up" triggerOnce>
+        <Slide direction="up" triggerOnce className="contents">
           <div className="flex flex-col items-start gap-4">
             <span>{t("With Easilly")}</span>
             <h3 className="dark-title">{t("Best Results")}</h3>
@@ -68,33 +62,13 @@ const BestResults: React.FC = () => {
               <ArrowImage url={bestResultsImage.src} />
             </Slide>
             <Slide direction="up" triggerOnce>
-              <Card className='h-full'>
-                <BlockHeader title={t("All Tags")} />
-                <div className="grid grid-cols-4 md:grid-cols-3 smd:grid-cols-2 sm:grid-cols-1 py-[20px] px-[25px] gap-[20px]">
-                  {allTagsData.map((value) => (
-                    <div key={value} className="grid gap-[6px] text-center">
-                      <Button
-                        onClick={() => handleTagClick(value)}
-                        variant={selectedTag === value ? "flat" : "bordered"}
-                        {...register("selectedTag", {
-                          required: "Please select a tag",
-                        })}
-                        color={errors.selectedTag ? "danger" : undefined}
-                      >
-                        {t(value)}
-                      </Button>
-                      {errors.selectedTag && (
-                        <p className="text-danger text-[12px]">
-                          {errors.selectedTag.message}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </Card>
+              <div className="grid gap-y-[20px] md:gap-y-[16px] sm:gap-y-[10px]">
+                <h2>{t('Best-Results-title')}</h2>
+                <p>{t('Best-Results-desc')}</p>
+              </div>
             </Slide>
           </div>
-          <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce className="contents">
             <Card className="overflow-visible">
               <BlockHeader title={t("Book this Tour")} />
               <form onSubmit={handleSubmit(onSubmit)} className="contents">
