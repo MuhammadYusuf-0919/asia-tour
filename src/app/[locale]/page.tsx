@@ -9,6 +9,7 @@ import Header from "@/components/Header"
 import Slider from "@/components/Slider"
 import ContactUs from "@/components/contac-us-main"
 import TopTours from "@/components/TopTours"
+import LastMin from "@/components/LastMin"
 
 export default function Index() {
   const t = useTranslations("home")
@@ -24,6 +25,7 @@ export default function Index() {
         <BestTours title={t('Best Tours')} span={t('Top selling')} />
         <BestAbroadTours title={t('Best Abroad Tours')} span={t('Top selling')} />
         <Contact main={true} />
+        <LastMin />
       </div>
       <div className="flex flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]">
         <BestOpinions title={t("Best Opinions")} span={t("Top selling")} />

@@ -44,7 +44,9 @@
     "Best Abroad Tours": "En İyi Yurtdışı Turlar",
     "Best Opinions": "En İyi Görüşler",
     "With Easilly": "Kolayca",
-    "Top Agency": "Top Ajans"
+    "Top Agency": "Top Ajans",
+    "Last Minute Offers": "Son Dakika Teklifleri",
+    "lastDes": "Asia Tour'ın Son Dakika Teklifleri ile Doğu'nun zengin tarihine, çeşitli kültürlerine ve muazzam manzaralarına anında dalma fırsatını yakalayabilirsiniz. Bir ömür boyu sürecek macerayı kaçırmayın - anı yakalayın ve bugün bizimle Asya'yı keşfedin!"
   },
   "footer": {
     "Follow us on": "Bizi Takip Edin",
@@ -58,6 +60,8 @@
     "Adventure": "Macera",
     "Couple": "Çift",
     "Family": "Aile",
+    "Holiday": "Tatil",
+    "Our team": "Bizim takım",
     "Copyright 2020 2023 by Alper Tungo Tour": "Telif Hakkı 2020 2023 Alper Tungo Tour"
   },
   "tours": {

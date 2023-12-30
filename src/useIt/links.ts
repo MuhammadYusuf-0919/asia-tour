@@ -10,5 +10,9 @@ export const links =[
     {
         name:'Tours',
         href:'/tours'
-    }
+    },
+    {
+        name:'Our team',
+        href:'/team'
+    },
 ]

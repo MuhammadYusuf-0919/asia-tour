@@ -53,7 +53,7 @@ function Contact({ main }: ContactProps) {
     <Slide triggerOnce direction="up">
       <div
         id="contact"
-        className="container-lg py-[80px] grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
+        className=" grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
       >
         {main && (
           <>
@@ -68,7 +68,7 @@ function Contact({ main }: ContactProps) {
                 <ArrowImage url={operator.src} />
               </Fade>
               <Fade direction="right" triggerOnce>
-                <Card className="grid py-[20px] p-[40px] md:p-[30px] sm:p-[20px] gap-[20px] shadow-0px 0px 25px 0px rgba(0, 0, 0, 0.20) animate__animate animate__backInRight animate__backOutRight">
+                <Card className="grid py-[20px] p-[40px] md:p-[30px] sm:p-[20px] gap-[20px] shadow-0px 0px 25px 0px rgba(0, 0, 0, 0.20)">
                   <h3 className="text-black font-roboto text-2xl font-semibold">
                     {t("Contact Info")}
                   </h3>

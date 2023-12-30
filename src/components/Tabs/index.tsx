@@ -38,9 +38,11 @@ const TourTabs = () => {
                                 <Fade direction='left'>
                                     <table className='w-full p-0'>
                                         <thead className='border-[2.5px] border-gray'>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-left pl-[23px] sm:pl-[16px] py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Cities")}</th>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Nights")}</th>
-                                            <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Hotels")}</th>
+                                            <tr>
+                                                <th className='border-[2.5px] border-gray text-[26px] text-gray text-left pl-[23px] sm:pl-[16px] py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Cities")}</th>
+                                                <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Nights")}</th>
+                                                <th className='border-[2.5px] border-gray text-[26px] text-gray text-center py-[10px] xl:text-[20px] sm:text-[16px]'>{t("Hotels")}</th>
+                                            </tr>
                                         </thead>
                                         <tbody>
                                             {tab.info.map((i, index) => (
