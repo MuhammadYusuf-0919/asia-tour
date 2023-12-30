@@ -7,8 +7,9 @@ import earth from '@/assets/header/lang.png'
 import arrow from '@/assets/header/arrow.png'
 import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from '@/navigation'
-import Drawer from './Drawer'
 import HeaderContact from './HeaderContact'
+import dynamic from 'next/dynamic'
+const Drawer = dynamic(() => import('./Drawer'), { ssr: false })
 
 const Header = () => {
     const [open, setOpen] = useState(false)

@@ -14,21 +14,21 @@ export default function Index() {
   const t = useTranslations("home")
 
   return (
-    <div>
-      <Header />
-      <Slider />
-      <div className='container pt-[111px] flex flex-col gap-[111px]'>
+    <div className="flex flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]">
+      <div>
+        <Header />
+        <Slider />
+      </div>
+      <div className='container-lg flex flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]'>
         <TopTours />
-        <div className='flex flex-col gap-[111px] container'>
-          <BestTours title={t('Best Tours')} span={t('Top selling')} />
-          <BestAbroadTours title={t('Best Abroad Tours')} span={t('Top selling')} />
-        </div>
+        <BestTours title={t('Best Tours')} span={t('Top selling')} />
+        <BestAbroadTours title={t('Best Abroad Tours')} span={t('Top selling')} />
+        <Contact main={true} />
       </div>
-      <div className="pt-[111px]">
+      <div className="flex flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]">
         <BestOpinions title={t("Best Opinions")} span={t("Top selling")} />
+        <ContactUs />
       </div>
-      <Contact main={true} />
-      <ContactUs />
       <Footer />
     </div>
   )
