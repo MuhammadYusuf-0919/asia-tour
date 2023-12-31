@@ -23,10 +23,10 @@ const config: Config = {
       'greenLighter': '#DCFFE6',
       'dark': '#000',
       'danger': '#F54180',
-      'grey':'#838383',
-      'gray':"#A0A0A0",
-      'darker':"rgba(0, 0, 0, 0.65)",
-      'greener':'rgba(53, 204, 97, 0.3)'
+      'grey': '#838383',
+      'gray': "#A0A0A0",
+      'darker': "rgba(0, 0, 0, 0.65)",
+      'greener': 'rgba(53, 204, 97, 0.2)'
     },
     screens: {
       '2xl': { 'max': '1750px' },
@@ -37,8 +37,8 @@ const config: Config = {
       'smd': { 'max': '770px' },
       'sm': { 'max': '456px' }
     },
-    boxShadow:{
-      'card':"0px 0px 25px 0px rgba(0, 0, 0, 0.25)"
+    boxShadow: {
+      'card': "0px 0px 25px 0px rgba(0, 0, 0, 0.25)"
     },
     extend: {
     },

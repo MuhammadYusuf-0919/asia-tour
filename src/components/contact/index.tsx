@@ -19,7 +19,7 @@ interface FormData {
 }
 
 const inputStyles = {
-  label: "text-black font-roboto text-3xl md:text-2xl sm:tedxt-xl",
+  label: "text-black font-roboto text-[30px] md:text-[25px] smd:text-[20px] sm:text-[16px]",
   input: [
     "text-black/90 dark:text-white/90",
     "placeholder:text-default-700/50 dark:placeholder:text-white/60",
@@ -84,9 +84,9 @@ function Contact({ main }: ContactProps) {
           <Card className="contact p-[50px] smd:p-[30px] sm:p-[20px] gap-y-[50px] smd:gap-y-[40px] sm:gap-y-[30px]">
             <form onSubmit={handleSubmit(onSubmit)} className="contents">
               <div className="font-roboto">
-                <h3 className="text-black text-2xl font-semibold">
+                <h2 className=" font-semibold">
                   {t("Contact-title")}
-                </h3>
+                </h2>
                 <p className="text-gray-400 text-lg">{t("Contact-desc")}</p>
               </div>
               <div className="grid gap-y-[30px] md:gap-y-[24px] sm:gap-y-[20px]">
