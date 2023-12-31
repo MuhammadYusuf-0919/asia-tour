@@ -31,26 +31,28 @@ const Drawer = ({ open, setOpen, pathname, locale }: thisProps) => {
     }, [open]);
     return ReactDOM.createPortal(
         <div id='drawer'>
-            <div className={`fixed z-[-1] w-screen bottom-0 h-screen duration-0 drawer 
+            <div className={`fixed z-[-1] w-screen bottom-0 h-screen duration-400 drawer 
              ${open ? 'backdrop-blur-lg opacity-100 !z-[1000]' : 'opacity-0'}`}
-                onClick={() => setOpen(false)} />
+            />
             <div className={`fixed shadow-card w-[300px] p-[16px] max-w-full
              !z-[1000] !duration-400 ml-[-20px] h-[100vh] 
              top-0 right-0 flex  shadow-lg flex-col gap-[16px] items-center
-             ${open ? 'translate-x-[0] duration-400' : 'translate-x-[300px]'} bg-[white] pt-[110px] 
-             md:pt-[70px] smd:pt-[100px] sm:pt-[135px]`}>
+             ${open ? 'translate-x-[0] duration-400' : 'translate-x-[300px]'} bg-[white]`}>
                 <div className={open ? 'w-full !z-[1000]' : 'hidden'}>
-                    <div className='flex justify-between w-full'>
+                    <div className='flex justify-between items-center w-full'>
                         <Image src={logo.src} alt='logo' width={125} height={125} className='cursor-pointer lg:w-[100px]
             smd:w-[80px]' />
-                        <div />
+                        <div className={`h-[25px] w-[35px] cursor-pointer flex flex-col justify-between`} onClick={() => setOpen(!open)}>
+                            <span className={`w-full h-[5px] rounded-full bg-green m-0 rotate-45 translate-y-[200%]`} />
+                            <span className={`w-full h-[5px] rounded-full bg-green m-0 -rotate-45 -translate-y-[200%]`} />
+                        </div>
                     </div>
                     <div className='flex flex-col gap-[10px] items-center'>
                         {links.map(l => (
-                            l.href === '#contact' ? <button key={l.name}
-                                onClick={scrollToElement}
-                                className='cursor-pointer text-[24px] hover:underline lg:text-[18px] smd:text-[16px]'>{l.name}</button> :
-                                <Link onClick={() => setOpen(false)} href={`/${locale}/${l.href}`} locale={locale} key={l.name} className={`text-[24px] hover:underline ${pathname === l.href && 'text-green'}`}>
+                            l.href.includes('#') ? <button key={l.name}
+                                onClick={() => { scrollToElement(l.href.slice(1)), setOpen(false) }}
+                                className='cursor-pointer text-[18px]'>{l.name}</button> :
+                                <Link onClick={() => setOpen(false)} href={l.href} locale={locale} key={l.name} className={`text-[18px] ${pathname === l.href && 'text-green'}`}>
                                     {l.name}
                                 </Link>
                         ))}

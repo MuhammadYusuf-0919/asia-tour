@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import BlockHeader from "../block-header"
+import BlockHeader from "../../themes/block-header"
 import { roundedIcon } from "@/assets/svg"
 import { Card, Listbox, ListboxItem, ScrollShadow } from "@nextui-org/react"
 

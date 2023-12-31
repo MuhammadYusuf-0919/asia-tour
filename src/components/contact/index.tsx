@@ -3,7 +3,7 @@
 import React from "react"
 import { contactData } from "@/data"
 import { InfoItem } from "../InfoItem"
-import ArrowImage from "../arrow-image"
+import ArrowImage from "../../themes/arrow-image"
 import userIcon from "@/assets/images/user.svg"
 import operator from "@/assets/images/operator.png"
 import phoneCall from "@/assets/images/phoneCall.svg"
@@ -11,7 +11,6 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { Button, Card, Input, Textarea } from "@nextui-org/react"
 import { useTranslations } from "next-intl"
 import { Fade, Slide } from "react-awesome-reveal"
-import StarRating from "../stars-rating"
 
 interface FormData {
   name: string
@@ -54,7 +53,7 @@ function Contact({ main }: ContactProps) {
     <Slide triggerOnce direction="up">
       <div
         id="contact"
-        className="container-lg py-[80px] grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
+        className=" grid gap-x-[100px] gap-y-[110px] md:gap-y-[80px] smd:gap-y-[60px] sm:gap-y-[40px] "
       >
         {main && (
           <>
@@ -69,7 +68,7 @@ function Contact({ main }: ContactProps) {
                 <ArrowImage url={operator.src} />
               </Fade>
               <Fade direction="right" triggerOnce>
-                <Card className="grid py-[20px] p-[40px] md:p-[30px] sm:p-[20px] gap-[20px] shadow-0px 0px 25px 0px rgba(0, 0, 0, 0.20) animate__animate animate__backInRight animate__backOutRight">
+                <Card className="grid py-[20px] p-[40px] md:p-[30px] sm:p-[20px] gap-[20px] shadow-0px 0px 25px 0px rgba(0, 0, 0, 0.20)">
                   <h3 className="text-black font-roboto text-2xl font-semibold">
                     {t("Contact Info")}
                   </h3>
@@ -159,7 +158,6 @@ function Contact({ main }: ContactProps) {
                     ],
                   }}
                 />
-                <StarRating />
                 <Button
                   size="lg"
                   type="submit"
