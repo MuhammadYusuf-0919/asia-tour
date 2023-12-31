@@ -21,17 +21,15 @@ const Header = () => {
     const router = useRouter()
     const changelang = (e: any) => {
         router.replace(pathname, { locale: `${e}` })
-
     }
 
     useEffect(() => {
         scrollTo({ behavior: 'smooth', top: 0 })
     }, [])
-    console.log(locale);
 
     return (
         <header className='animate__animated animate__zoomInDown animate__slow'>
-            {/* <HeaderContact /> */}
+            <HeaderContact />
             <div className='flex justify-between items-center px-[35px] md:px-[16px]'>
                 <Image src={logo.src} alt='logo' width={200} height={160} className={`cursor-pointer lg:w-[150px] smd:w-[100px]`} />
                 <aside className='flex items-center gap-[34px] lg:gap-[25px] smd:gap-[16px]'>

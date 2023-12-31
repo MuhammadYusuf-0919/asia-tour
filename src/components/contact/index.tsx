@@ -3,7 +3,7 @@
 import React from "react"
 import { contactData } from "@/data"
 import { InfoItem } from "../InfoItem"
-import ArrowImage from "../arrow-image"
+import ArrowImage from "../../themes/arrow-image"
 import userIcon from "@/assets/images/user.svg"
 import operator from "@/assets/images/operator.png"
 import phoneCall from "@/assets/images/phoneCall.svg"

@@ -9,9 +9,9 @@ import {
   Textarea,
   SelectItem,
 } from "@nextui-org/react"
-import ArrowImage from "../arrow-image"
-import BlockHeader from "../block-header"
-import DatePicker from "@/lib/DatePicker"
+import ArrowImage from "../../themes/arrow-image"
+import BlockHeader from "../../themes/block-header"
+import DatePicker from "@/themes/DatePicker"
 import bestResultsImage from "@/assets/images/bestResults.png"
 import { useForm, SubmitHandler, Controller } from "react-hook-form"
 import { adultData, allTagsData, childData, ticketsData } from "@/data"

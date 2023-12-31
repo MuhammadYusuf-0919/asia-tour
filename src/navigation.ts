@@ -3,8 +3,8 @@ import {
   Pathnames
 } from 'next-intl/navigation';
  
-export const locales = ['en', 'ru','tu'] as const;
-export const localePrefix = 'always'; // Default
+export const locales = ['en', 'tu'] as const;
+export const localePrefix = 'as-needed'; // Default
  
 // The `pathnames` object holds pairs of internal
 // and external paths, separated by locale.
@@ -12,7 +12,7 @@ export const pathnames = {
   '/': '/',
   '/contact': '/contact',
   '/tours':'/tours',
-  'test':'/test'
+  '/team':'/team'
 } satisfies Pathnames<typeof locales>;
  
 export const {Link, redirect, usePathname, useRouter, getPathname} =
