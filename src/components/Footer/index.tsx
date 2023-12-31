@@ -18,7 +18,7 @@ const Footer = () => {
     const pahtName = usePathname()
     const t = useTranslations('footer')
 
-    const tours = [
+    const tours: { name: string, href: string }[] = [
         {
             name: t('Adventure'),
             href: '/adventure'

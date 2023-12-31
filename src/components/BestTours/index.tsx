@@ -3,7 +3,7 @@ import { data } from './data'
 import Card from '@/themes/Card'
 import { Slide } from 'react-awesome-reveal'
 
-const BestTours = ({ title, span }: any) => {
+const BestTours = ({ title, span }: { title: string, span: string }) => {
     return (
         <div className='flex flex-col gap-[50px] md:gap-[30px] sm:gap-[16px]'>
             <Slide direction='up' triggerOnce>
