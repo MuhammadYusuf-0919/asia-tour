@@ -59,7 +59,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='flex gap-[100px] smd:w-full md:gap-[60px] smd:gap-x-0 smd:gap-y-[20px] smd:justify-between smd:grid smd:grid-cols-2'>
+                    <div className='flex gap-[100px] smd:w-full md:gap-[60px] smd:gap-x-0 smd:gap-y-[20px] smd:justify-between smd:flex-wrap'>
                         <div className='flex flex-col gap-[20px] smd:gap-[10px]'>
                             <h4>{t('Links')}</h4>
                             <div className='flex flex-col gap-[8px]'>
@@ -70,7 +70,7 @@ const Footer = () => {
                                 <div className='group flex items-center gap-[10px] translate-x-[-23px] hover:translate-x-0 cursor-pointer duration-400'>
                                     <span className='bg-green w-[13px] h-[13px] duration-400 translate-x-[23px] rounded-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 m-0' />
                                     <button className='text-[18px] md:text-[16px] smd:text-[14px]'
-                                        onClick={scrollToElement}>
+                                        onClick={() => scrollToElement('contact')}>
                                         {t("Contact")}
                                     </button>
                                 </div>
@@ -95,7 +95,7 @@ const Footer = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className='flex flex-col gap-[20px] smd:gap-[10px] smd:w-[100%]'>
+                        <div className='flex flex-col gap-[20px] smd:gap-[10px] smd:w-full'>
                             <h4>{t('Contact us')}</h4>
                             <div className='flex flex-col gap-[8px]'>
                                 <div className='flex items-center gap-[30px] smd:gap-[15px]'>
@@ -109,12 +109,12 @@ const Footer = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-[30px] smd:gap-[15px]'>
+                                <div className='w-full flex items-center gap-[30px] smd:gap-[15px]'>
                                     <Image src={email.src} alt='email' width={18} height={18} className='animate__tada animate__animated animate__infinite infinite animate__slow animation' />
                                     <a href="mailto: alpertour@gmail.com" className='text-[18px] md:text-[16px] smd:text-[14px] hover:underline'>alpertour@gmail.com</a>
                                 </div>
                                 <div className='flex items-center gap-[30px] smd:gap-[15px]'>
-                                    <Image src={location.src} alt='email' width={18} height={18} className='animate__tada animate__animated animate__infinite infinite animate__slow animation' />
+                                    <Image src={location.src} alt='email' width={18} height={18} className='animate__tada animate__animated animate__infinite infinite animate__slow animation sm:w-[20px]' />
                                     <a href="" className='text-[18px] md:text-[16px] smd:text-[14px] hover:underline max-w-[300px]'>Asia Tour Elit LTD 2nd Korasuv Street,
                                         Tashkent 100029, Uzbekistan</a>
                                 </div>

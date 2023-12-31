@@ -3,7 +3,12 @@ import "@/styles/globals.css"
 
 import { ReactNode } from "react"
 import { NextIntlClientProvider, useMessages } from "next-intl"
+import { Metadata } from "next"
 
+export const metadata: Metadata = {
+  title: 'Alper Tunga Tour',
+  description: 'The official Alper Tunga Tour agency site.'
+}
 export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode, params: { locale: string } }) {
   const messages = useMessages()
   return (
