@@ -6,7 +6,7 @@ import React from 'react'
 const Card = ({ d }: any) => {
 
     return (
-        <div className='w-full group shadow-card overflow-hidden'>
+        <div className='w-full group shadow-card overflow-hidden rounded-t-[5px]'>
             <Image src={d.img} alt='tour img' width={550} height={260} className='group-hover:scale-110
              duration-400 w-full aspect-[55/26] max-w-full object-cover' />
             <div className='flex items-center w-full justify-between px-[12px] py-[9px] bg-[white] relative overflow-hidden '>

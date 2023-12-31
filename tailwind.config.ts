@@ -12,7 +12,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'roboto': ['Roboto', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif']
     },
     colors: {
       "green": '#35CC61',
