@@ -1,14 +1,16 @@
 import { Button, Divider } from '@nextui-org/react'
-import Image from 'next/image'
 import React from 'react'
+import CustomeImage from '../CustomeImage'
+import Image from 'next/image'
 
 
 const Card = ({ d }: any) => {
 
     return (
-        <div className='w-full group shadow-card overflow-hidden rounded-t-[5px]'>
-            <Image src={d.img} alt='tour img' width={550} height={260} className='group-hover:scale-110
-             duration-400 w-full aspect-[55/26] max-w-full object-cover' />
+        <div className='w-full group relative shadow-card overflow-hidden rounded-t-[5px]'>
+            <div className='relative flex-1 max-h-[260px] h-[260px]'>
+                <CustomeImage url={d.img} alt='tour img' fill={true} />
+            </div>
             <div className='flex items-center w-full justify-between px-[12px] py-[9px] bg-[white] relative overflow-hidden '>
                 <div className='absolute bottom-[50%] left-[50%] translate-x-[-50%] translate-y-[50%] rounded-full w-0 aspect-square bg-greener duration-400 z-0 group-hover:w-[105%]' />
                 <div className='flex flex-col items-start gap-[20px] lg:gap-[10px] sm:gap-[6px]'>
