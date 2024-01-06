@@ -31,7 +31,7 @@ const config: Config = {
       'grey':'#838383',
       'gray':"#A0A0A0",
       'darker':"rgba(0, 0, 0, 0.65)",
-      'greener':'rgba(53, 204, 97, 0.70)'
+      'greener':'rgba(53, 204, 97, 0.2)'
     },
     screens: {
       '2xl': { 'max': '1750px' },

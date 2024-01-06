@@ -25,7 +25,7 @@ function TopTours() {
   };
   return (
     <Slide direction="up" triggerOnce>
-      <div className="flex md:flex-col md:gap-y-[100px] sm:gap-y-[80px] items-end justify-between gap-x-[85px]">
+      <div className="flex md:flex-col w-full md:gap-y-[100px] sm:gap-y-[80px] items-end justify-between gap-x-[85px]">
         <div className="w-[50%] md:w-full grid gap-y-[30px] md:gap-y-[20px] sm:gap-y-[14px]">
           <div className="flex flex-col items-start">
             <span>{t("Top Agency")}</span>
@@ -46,7 +46,7 @@ function TopTours() {
               },
               next: {
                 translate: ['100%', 0, 0],
-                opacity: 0
+                opacity: 0,
               },
             }}
             className="overflow-visible"

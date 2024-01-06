@@ -18,7 +18,7 @@
 }
 
 .container-lg {
-  @apply px-[100px] !w-full max-w-full md:px-[50px] smd:px-[35px] sm:px-[20px] 
+  @apply px-[100px] !w-full max-w-full 2xl:px-[80px] xl:px-[50px] md:px-[30px] smd:px-[20px] sm:px-[16px] 
 }
 
 .dark-title {
