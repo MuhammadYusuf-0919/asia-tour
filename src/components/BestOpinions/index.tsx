@@ -10,7 +10,7 @@ import quote from '@/assets/quote.png'
 import star from '@/assets/star.png'
 import arrow from '@/assets/arrow.png'
 
-const BestOpinions = ({ title, span }: any) => {
+const BestOpinions = ({ title, span }: { title: string, span: string }) => {
     SwiperCore.use([Autoplay, Navigation])
     const swiperRef = useRef<any>(null);
 

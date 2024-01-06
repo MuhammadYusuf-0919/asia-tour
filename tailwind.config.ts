@@ -3,21 +3,16 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/*/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/themes/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontFamily: {
-      'roboto': ['Roboto', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif']
     },
     colors: {
       "green": '#35CC61',
@@ -28,10 +23,10 @@ const config: Config = {
       'greenLighter': '#DCFFE6',
       'dark': '#000',
       'danger': '#F54180',
-      'grey':'#838383',
-      'gray':"#A0A0A0",
-      'darker':"rgba(0, 0, 0, 0.65)",
-      'greener':'rgba(53, 204, 97, 0.2)'
+      'grey': '#838383',
+      'gray': "#A0A0A0",
+      'darker': "rgba(0, 0, 0, 0.65)",
+      'greener': 'rgba(53, 204, 97, 0.2)'
     },
     screens: {
       '2xl': { 'max': '1750px' },
@@ -42,8 +37,8 @@ const config: Config = {
       'smd': { 'max': '770px' },
       'sm': { 'max': '456px' }
     },
-    boxShadow:{
-      'card':"0px 0px 25px 0px rgba(0, 0, 0, 0.25)"
+    boxShadow: {
+      'card': "0px 0px 25px 0px rgba(0, 0, 0, 0.25)"
     },
     extend: {
     },

@@ -56,7 +56,7 @@ const Slider = () => {
                                     <h1 className='text-center font-[600] w-[80%] ml-[10%] animate__animated animate__zoomInDown animate__slow' >
                                         {d.des}
                                     </h1>
-                                    <Button onClick={scrollToElement} color='primary' size='lg' className='px-[30px] py-[16px] lg:px-[20px] lg:py-[13px] text-[24px] lg:text-[20px] md:text-[18px] md:px-[8px] md:h-[40px] sm:h-[30px] bg-green rounded-[5px] animate__animated animate__zoomInUp animate__slow ml-[10%]'>
+                                    <Button onClick={() => scrollToElement('contact')} color='primary' size='lg' className='px-[30px] py-[16px] lg:px-[20px] lg:py-[13px] text-[24px] lg:text-[20px] md:text-[18px] md:px-[8px] md:h-[40px] sm:h-[30px] bg-green rounded-[5px] animate__animated animate__zoomInUp animate__slow ml-[10%]'>
                                         Contact us
                                     </Button>
                                 </div>

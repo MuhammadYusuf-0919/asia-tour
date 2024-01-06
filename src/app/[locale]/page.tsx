@@ -15,7 +15,7 @@ export default function Index() {
   const t = useTranslations("home")
 
   return (
-    <div className="flex flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]">
+    <div className="flex overflow-hidden flex-col gap-[115px] lg:gap-[80px] md:gap-[60px] smd:gap-[40px]">
       <div>
         <Header />
         <Slider />

@@ -1,6 +1,6 @@
 'use client'
 import React from "react"
-import ArrowImage from "../arrow-image"
+import ArrowImage from "../../themes/arrow-image"
 import topTours from "@/assets/images/topTours.png"
 import { useTranslations } from "next-intl"
 import { Slide } from "react-awesome-reveal"

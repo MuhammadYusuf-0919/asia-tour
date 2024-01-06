@@ -16,7 +16,6 @@ const TourTabs = () => {
         center: [tab.loc.long, tab.loc.lat],
         zoom: 15,
     };
-    // px-[123px] 2xl:px-[32px] sm:px-[16px]
     return (
         <Slide triggerOnce direction='up'>
             <div className='flex flex-col gap-[36px] xl:gap-[20px]'>

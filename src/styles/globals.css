@@ -9,16 +9,21 @@
 @import 'swiper/swiper-bundle.css';
 @import 'swiper/css/effect-creative';
 @import 'swiper/css/effect-fade';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+html, body, label {
+  font-family: 'Roboto', sans-serif !important;
+  @apply !font-roboto
+}
 
 
 
 .container {
   @apply px-[50px] !w-full max-w-full xl:px-[30px] md:px-[16px]
-
 }
 
 .container-lg {
-  @apply px-[100px] !w-full max-w-full 2xl:px-[80px] xl:px-[50px] md:px-[30px] smd:px-[20px] sm:px-[16px] 
+  @apply px-[100px] !w-full max-w-full 2xl:px-[80px] xl:px-[50px] md:px-[30px] smd:px-[20px] sm:px-[16px]
 }
 
 .dark-title {
@@ -52,39 +57,45 @@ h1 {
 h2 {
   @apply text-[48px] xl:text-[30px] text-[#000] font-bold md:text-[35px] smd:text-[30px] sm:text-[26px]
 }
-h4{
-  @apply text-[32px] xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[18px] 
+
+h4 {
+  @apply text-[32px] xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[18px]
 }
-span{
+
+span {
   @apply text-[24px] text-grey mb-[-10px] lg:text-[18px] md:text-[16px] sm:text-[14px]
 }
-.dropdown span{
+
+.dropdown span {
   @apply m-0 text-[18px] sm:text-[16px]
 }
-.green span{
+
+.green span {
   @apply !text-green font-bold
 }
-li span{
+
+li span {
   @apply !m-0
 }
 
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent,rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  scrollbar-color:#35CC61 #DBDBDB;
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  scrollbar-color: #35CC61 #DBDBDB;
   margin: 0 !important;
+  font-family: 'Roboto';
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   background-color: #DBDBDB;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background-color: #35CC61 !important;
   border-radius: 5px;
 }
 
-.contact label{
+.contact label {
   @apply !text-[30px] md:!text-[24px] smd:!text-[18px] !pb-[8px]
 }

@@ -5,7 +5,7 @@ import Card from "@/themes/Card";
 
 import React from 'react'
 
-const BestAbroadTours = ({ title, span }: any) => {
+const BestAbroadTours = ({ title, span }: { title: string, span: string }) => {
     return (
         <div className='flex flex-col gap-[50px] md:gap-[30px] sm:gap-[16px]'>
             <Slide direction="up" triggerOnce>
